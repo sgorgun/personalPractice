@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="interfacesLessonMyConsoleApp.Program">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="interfacesLessonMyConsoleApp.Rocket">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAACAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Rocket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="interfacesLessonMyConsoleApp.RocketHeader">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAACAAAAAAAACAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>RocketHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="interfacesLessonMyConsoleApp.HatersEngine">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAACAAAAABKAAAAAAAAAA=</HashCode>
+      <FileName>HatersEngine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.104" />
+  </Class>
+  <Interface Name="interfacesLessonMyConsoleApp.IEngine">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAACAAAAABIAAAAAAAAAA=</HashCode>
+      <FileName>IEngine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
