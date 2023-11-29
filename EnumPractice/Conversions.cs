@@ -2,7 +2,7 @@
 // You can convert an enum instance to and from its underlying integral value with an explicit cast:
 namespace EnumPractice
 {
-    internal class Program
+    internal class Conversions
     {
         static void Main(string[] args)
         {
