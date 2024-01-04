@@ -8,7 +8,7 @@ Func<double, double, double> @delegate1 = (x, y) => x - y;
 Func<double, double, double> @delegate3 = (x, y) => x - y;
 Func<int, int, int> @delegate4 = (x, y) => x - y;
 Comparison<int> @delegate5 = (x, y) => x - y;
-Console.WriteLine(delegate5(3,23));
+Console.WriteLine(delegate5(3, 23));
 
 Comparison<int> comparer = (x, y) => x - y;
 Predicate<int> predicate = x => x == 1;
@@ -16,4 +16,3 @@ Action action = () => Console.WriteLine();
 Comparison<int> comparer1 = (x, y) => x - y;
 Func<int, int, int> func = (int x, int y) => (x > y) ? 1 : ((x < y) ? -1 : 0);
 Console.WriteLine(predicate(1));
-
