@@ -1,18 +1,33 @@
-﻿Func<int, int> func1 = x => x / 2;
-Func<int, int> func2 = x => Math.Abs(x);
-Func<int, int, int> func3 = (int x, int y) => x + y;
-Func<int, double> func4 = (int x) => Math.Sqrt(x);
-Func<int, int> func5 = (int x) => x * x * x;
+﻿// A lambda expression is an unnamed method written in place of a delegate instance.
+// A lambda expression has the following form:
+//   (parameters) => expression-or-statement-block
 
-Func<double, double, double> @delegate1 = (x, y) => x - y;
-Func<double, double, double> @delegate3 = (x, y) => x - y;
-Func<int, int, int> @delegate4 = (x, y) => x - y;
-Comparison<int> @delegate5 = (x, y) => x - y;
-Console.WriteLine(delegate5(3, 23));
+Transformer sqr = x => x * x;
+Console.WriteLine($"sqr:{sqr(3)}");    // 9
 
-Comparison<int> comparer = (x, y) => x - y;
-Predicate<int> predicate = x => x == 1;
-Action action = () => Console.WriteLine();
-Comparison<int> comparer1 = (x, y) => x - y;
-Func<int, int, int> func = (int x, int y) => (x > y) ? 1 : ((x < y) ? -1 : 0);
-Console.WriteLine(predicate(1));
+// Using a statement block instead:
+Transformer sqrBlock = x => { return x * x; };
+Console.WriteLine($"sqr:{sqr(3)}");
+
+// Using a generic System.Func delegate:
+Func<int, int> sqrFunc = x => x * x;
+Console.WriteLine($"sqr:{sqrFunc(3)}");
+
+// Zero arguments:
+Func<string> greeter = () => "Hello, world";
+Console.WriteLine(greeter());
+
+// With implicit typing (from C# 10):
+var greeter2 = () => "Hello, world";
+Console.WriteLine(greeter());
+
+// Using multiple arguments:
+Func<string, string, int> totalLength = (s1, s2) => s1.Length + s2.Length;
+int total = totalLength("hello", "world");
+Console.WriteLine($"total:{total}");
+
+// Explicitly specifying parameter types:
+Func<int, int> sqrExplicit = (int x) => x * x;
+Console.WriteLine($"sqr:{sqrFunc(3)}");
+
+delegate int Transformer(int i);

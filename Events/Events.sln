@@ -5,9 +5,13 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events", "Events.csproj", "{508253EE-06B4-43F6-B818-C77A24001B8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsStandartPattern", "..\EventsStandartTempate\EventsStandartPattern.csproj", "{129379C3-2EE0-4569-92B6-F8211FCA1CE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsStandartPattern", "..\EventsStandartTempate\EventsStandartPattern.csproj", "{129379C3-2EE0-4569-92B6-F8211FCA1CE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpressions", "..\LambdaExpressions\LambdaExpressions.csproj", "{D214C5B2-7916-4AA0-9379-1C683B37F666}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaExpressions", "..\LambdaExpressions\LambdaExpressions.csproj", "{D214C5B2-7916-4AA0-9379-1C683B37F666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsStandartPatternSimpleEventHandler", "..\EventsStandartPatternSimpleEventHandler\EventsStandartPatternSimpleEventHandler.csproj", "{3FC8F8E3-4138-4919-9439-B742B8DD8CD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventAccessors", "..\EventAccessors\EventAccessors.csproj", "{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{D214C5B2-7916-4AA0-9379-1C683B37F666}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D214C5B2-7916-4AA0-9379-1C683B37F666}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D214C5B2-7916-4AA0-9379-1C683B37F666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC8F8E3-4138-4919-9439-B742B8DD8CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC8F8E3-4138-4919-9439-B742B8DD8CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC8F8E3-4138-4919-9439-B742B8DD8CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC8F8E3-4138-4919-9439-B742B8DD8CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
