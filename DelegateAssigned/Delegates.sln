@@ -23,9 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesControvariance", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatesCovariance", "..\DelegatesCovariance\DelegatesCovariance.csproj", "{D38EFB93-1291-42FE-9E39-A1C469DD9F3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegteSimple", "..\DelegteSimple\DelegteSimple.csproj", "{D0271CEE-F65F-415E-B16C-AFB8ACF192E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegteSimple", "..\DelegteSimple\DelegteSimple.csproj", "{D0271CEE-F65F-415E-B16C-AFB8ACF192E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatePluginMethods", "..\DelegatePluginMethods\DelegatePluginMethods.csproj", "{818ED458-17A7-4213-900E-64B656309325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegatePluginMethods", "..\DelegatePluginMethods\DelegatePluginMethods.csproj", "{818ED458-17A7-4213-900E-64B656309325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesStaticMethods", "..\DelegatesStaticMethods\DelegatesStaticMethods.csproj", "{EECA8C12-E6EC-441C-9C6C-4B0507028775}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{818ED458-17A7-4213-900E-64B656309325}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{818ED458-17A7-4213-900E-64B656309325}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{818ED458-17A7-4213-900E-64B656309325}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECA8C12-E6EC-441C-9C6C-4B0507028775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECA8C12-E6EC-441C-9C6C-4B0507028775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECA8C12-E6EC-441C-9C6C-4B0507028775}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECA8C12-E6EC-441C-9C6C-4B0507028775}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

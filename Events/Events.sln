@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsStandartPattern", "..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaExpressions", "..\LambdaExpressions\LambdaExpressions.csproj", "{D214C5B2-7916-4AA0-9379-1C683B37F666}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsStandartPatternSimpleEventHandler", "..\EventsStandartPatternSimpleEventHandler\EventsStandartPatternSimpleEventHandler.csproj", "{3FC8F8E3-4138-4919-9439-B742B8DD8CD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventsStandartPatternSimpleEventHandler", "..\EventsStandartPatternSimpleEventHandler\EventsStandartPatternSimpleEventHandler.csproj", "{3FC8F8E3-4138-4919-9439-B742B8DD8CD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventAccessors", "..\EventAccessors\EventAccessors.csproj", "{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAccessors", "..\EventAccessors\EventAccessors.csproj", "{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventTest", "..\EventTest\EventTest.csproj", "{8CF0F77B-2F32-47D0-8CFB-AE63287A8E74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84DF3CBB-39E6-4DB7-A28A-2F1BD2736989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF0F77B-2F32-47D0-8CFB-AE63287A8E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF0F77B-2F32-47D0-8CFB-AE63287A8E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF0F77B-2F32-47D0-8CFB-AE63287A8E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF0F77B-2F32-47D0-8CFB-AE63287A8E74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

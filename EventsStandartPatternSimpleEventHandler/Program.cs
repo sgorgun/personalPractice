@@ -6,10 +6,22 @@ stock.Price = 27.10M;
 // Register with the PriceChanged event
 stock.PriceChanged += stock_PriceChanged;
 stock.Price = 31.59M;
+stock.PriceChanged += PriceChangeMoreThan;
+stock.Price = 50.59M;
+stock.Price = 150.59M;
+stock.Price = 70.59M;
+stock.Price = 150.59M;
+
 
 void stock_PriceChanged(object sender, EventArgs e)
 {
     Console.WriteLine("New price = " + ((Stock)sender).Price);
+}
+
+void PriceChangeMoreThan(object sender, EventArgs e)
+{
+    if (stock.Price > 150.00M)
+        Console.WriteLine("The price is more than 150. Sell!!!");
 }
 
 public class Stock
