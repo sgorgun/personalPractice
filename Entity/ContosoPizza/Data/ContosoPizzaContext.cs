@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ContosoPizza.Data
 {
-    public class ContosoPizzaContext
+    public class ContosoPizzaContext : DbContext
     {
         public DbSet<Customer> Customers { get; set; } = null!;
         public DbSet<Order> Orders { get; set; } = null!;
@@ -14,7 +14,7 @@ namespace ContosoPizza.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Connection string here");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; Initial Catalog=ContosoPizza");
         }
     }
 }
