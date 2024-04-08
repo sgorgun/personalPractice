@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "globalize": "^1.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
   }
 }
