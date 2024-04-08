@@ -27,30 +27,30 @@ using ContosoPizzaContext context = new ContosoPizzaContext();
 //context.SaveChanges();
 
 
-///// <summary>
-///// Change price
-///// </summary>
-//var veggieSpecial = context.Products
-//    .Where(p  => p.Name == "Veggie Special Pizza")
-//    .FirstOrDefault();
-//if (veggieSpecial is Product)
-//{
-//    veggieSpecial.Price = 10.99M;
-//}
-//context.SaveChanges();
-
-
 /// <summary>
-/// Remove from database
+/// Change price
 /// </summary>
 var veggieSpecial = context.Products
     .Where(p => p.Name == "Veggie Special Pizza")
     .FirstOrDefault();
 if (veggieSpecial is Product)
 {
-    context.Remove(veggieSpecial);
+    veggieSpecial.Price = 10.99M;
 }
 context.SaveChanges();
+
+
+///// <summary>
+///// Remove from database
+///// </summary>
+//var veggieSpecial = context.Products
+//    .Where(p => p.Name == "Veggie Special Pizza")
+//    .FirstOrDefault();
+//if (veggieSpecial is Product)
+//{
+//    context.Remove(veggieSpecial);
+//}
+//context.SaveChanges();
 
 
 /// <summary>
