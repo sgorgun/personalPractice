@@ -1,0 +1,48 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+name: 1.0.$(Rev:r).0
+
+trigger:
+- "*"
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: PowerShell@2
+  displayName: Build.ps1
+  inputs:
+    targetType: filePath
+    filePath: ./build.ps1
+    arguments: '; CIBuild'
+
+- task: PublishTestResults@2
+  displayName: 'Publish Test Results ./build/test/*.trx'
+  inputs:
+    testResultsFormat: VSTest
+    testResultsFiles: 'build/test/*.trx'
+    mergeTestResults: true
+    testRunTitle: 'CI Tests'
+  continueOnError: true
+  condition: succeededOrFailed()
+
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage from $(System.DefaultWorkingDirectory)/**/UnitTests/coverage.cobertura.xml'
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/UnitTests/coverage.cobertura.xml'
+
+- task: PublishCodeCoverageResults@1
+  displayName: 'Publish code coverage from $(System.DefaultWorkingDirectory)/**/UnitTests/coverage.cobertura.xml copy'
+  inputs:
+    codeCoverageTool: Cobertura
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/IntegrationTests/coverage.cobertura.xml'
+
+- task: NuGetCommand@2
+  displayName: 'NuGet push'
+  inputs:
+    command: push
+    packagesToPush: 'build\*.$(Build.BuildNumber).nupkg'
+    publishVstsFeed: 'ProgrammingWithPalermo/ChurchBulletin'
