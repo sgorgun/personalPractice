@@ -1,0 +1,13 @@
+﻿@model IEnumerable<WebApplicationFirstTry.Domain.Entity.User>
+@{
+    ViewData["Title"] = "PrintValuesCollections";
+}
+
+<h1>PrintValuesCollections</h1>
+
+<div class="card col-md-12">
+    @foreach (var item in Model)
+    {
+        <p class="text-center">@item.FirstName is @item.Age years old.</p>
+    }
+</div>
